@@ -1,0 +1,25 @@
+
+/node_modules/
+/releases/
+/.release-stage/
+/tmp-*
+/test-results/
+/playwright-report/
+.DS_Store
+*Zone.Identifier
+
+/*.sql
+/site/*.sql
+/site/.user.ini
+
+/scripts/quality/vendor/
+
+/.php-cs-fixer.cache
+
+/output/
+
+# Local verification artifacts
+/reports/
+/.playwright-cli/
+/.playwright/
+/blob-report/

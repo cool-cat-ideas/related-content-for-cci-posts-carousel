@@ -1,0 +1,18 @@
+{
+  "name": "related-content-for-cci-posts-carousel",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "package:wp": "npx -y node@23 scripts/build-release.mjs",
+    "format": "node scripts/quality/format.mjs",
+    "format:check": "node scripts/quality/format.mjs --check"
+  },
+  "engines": {
+    "node": ">=23.7.0"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10",
+    "esbuild": "0.28.2"
+  }
+}

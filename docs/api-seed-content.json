@@ -1,0 +1,13 @@
+{
+  "product": "Related Content for CCI Posts Carousel All In One",
+  "openSourceLicense": "GPL-2.0-or-later",
+  "version": "1.0.0",
+  "documentationLanguage": "en",
+  "publicFilters": [
+    "wp_posts_carousel_related_content_use_woocommerce",
+    "wp_posts_carousel_related_content_use_yoast_primary_term",
+    "wp_posts_carousel_related_content_reference_post_id",
+    "wp_posts_carousel_related_content_query_args"
+  ],
+  "optionalIntegrations": ["WooCommerce", "Yoast SEO"]
+}
