@@ -1,4 +1,4 @@
-=== Related Content for CCI Posts Carousel All In One ===
+=== Related Content for CCI Posts Carousel ===
 Contributors: coolcatideas, teastudiopl
 Tags: carousel, related posts, related products, taxonomy
 Requires at least: 6.0
@@ -12,11 +12,11 @@ Fill a carousel automatically with posts, pages or products related to the page 
 
 == Description ==
 
-This plugin adds a **Related Content** source to CCI Posts Carousel All In One. A product carousel uses WooCommerce's own related-product matches. For posts and pages, the plugin starts with the primary Yoast SEO category when it is available, then looks for shared public categories and tags.
+This plugin adds a **Related Content** source to CCI Posts Carousel. A product carousel uses WooCommerce's own related-product matches. For posts and pages, the plugin starts with the primary Yoast SEO category when it is available, then looks for shared public categories and tags.
 
 It also works without Yoast SEO and without WooCommerce.
 
-This extension requires CCI Posts Carousel All In One 2.0.0 or newer. It works with the base plugin and does not require Pro or a license key. Related Content selects the items; the main carousel plugin and its selected template control their appearance.
+This extension requires CCI Posts Carousel 2.0.0 or newer. It works with the base plugin and does not require Pro or a license key. Related Content selects the items; the main carousel plugin and its selected template control their appearance.
 
 [Developer guide](https://coolcatideas.com/docs/cci-posts-carousel-all-in-one/2.0.x/related-content/) | [Source code](https://github.com/cool-cat-ideas/related-content-for-cci-posts-carousel)
 
@@ -26,7 +26,7 @@ For public questions and bug reports, use [GitHub issues](https://github.com/coo
 
 == Installation ==
 
-1. Install and activate [CCI Posts Carousel All In One](https://wordpress.org/plugins/wp-posts-carousel/) version 2.0.0 or newer.
+1. Install and activate [CCI Posts Carousel](https://wordpress.org/plugins/wp-posts-carousel/) version 2.0.0 or newer.
 2. Install and activate this plugin.
 3. Edit a query-based carousel and select **Related to the current post or product** under **Order by**.
 4. Place the carousel on a post or product page and check the result.
@@ -39,7 +39,7 @@ If replacing an earlier Related Content package, deactivate that copy before act
 
 = Does Related Content require Pro? =
 
-No. Related Content works with the base CCI Posts Carousel All In One plugin. Optional live WooCommerce prices, ratings and cart actions are provided separately by CCI Posts Carousel All In One Pro.
+No. Related Content works with the base CCI Posts Carousel plugin. Optional live WooCommerce prices, ratings and cart actions are provided separately by CCI Posts Carousel Pro.
 
 = Is Yoast SEO required? =
 
@@ -60,4 +60,4 @@ The current post or product supplies the reference item on the storefront. Check
 == Changelog ==
 
 = 1.0.0 =
-* Initial public release for the CCI Posts Carousel All In One 2.0.0 extension API.
+* Initial public release for the CCI Posts Carousel 2.0.0 extension API.

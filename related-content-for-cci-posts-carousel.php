@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Related Content for CCI Posts Carousel All In One
+ * Plugin Name: Related Content for CCI Posts Carousel
  * Plugin URI: https://coolcatideas.com/products/cci-posts-carousel-related-content/
- * Description: Fills CCI Posts Carousel All In One rows with related posts and pages from shared terms, or with native WooCommerce related products on product pages.
+ * Description: Fills CCI Posts Carousel rows with related posts and pages from shared terms, or with native WooCommerce related products on product pages.
  * Version: 1.0.0
  * Author: Cool Cat Ideas
  * Author URI: https://coolcatideas.com/
- * Text Domain: related-content-for-cci-posts-carousel-all-in-one
+ * Text Domain: related-content-for-cci-posts-carousel
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * License: GPL v2 or later

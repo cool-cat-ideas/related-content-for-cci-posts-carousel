@@ -23,14 +23,14 @@ final class WP_Posts_Carousel_Related_Content_Addon {
 		}
 
 		echo '<div class="notice notice-warning"><p>'
-			. esc_html__( 'Related Content for CCI Posts Carousel All In One requires CCI Posts Carousel All In One 2.0.0 or newer.', 'related-content-for-cci-posts-carousel-all-in-one' )
+			. esc_html__( 'Related Content for CCI Posts Carousel requires CCI Posts Carousel 2.0.0 or newer.', 'related-content-for-cci-posts-carousel' )
 			. '</p></div>';
 	}
 
 	public function register_feature( $features ) {
 		$features['related_content_source']      = array(
-			'label'       => __( 'Related content source', 'related-content-for-cci-posts-carousel-all-in-one' ),
-			'description' => __( 'Builds a carousel from related posts or products, with native WooCommerce matching and optional Yoast SEO primary-term ranking.', 'related-content-for-cci-posts-carousel-all-in-one' ),
+			'label'       => __( 'Related content source', 'related-content-for-cci-posts-carousel' ),
+			'description' => __( 'Builds a carousel from related posts or products, with native WooCommerce matching and optional Yoast SEO primary-term ranking.', 'related-content-for-cci-posts-carousel' ),
 			'enabled'     => class_exists( 'WP_Posts_Carousel_Query_Builder' ),
 			'source'      => 'addon',
 			'author'      => 'Cool Cat Ideas',
@@ -38,15 +38,15 @@ final class WP_Posts_Carousel_Related_Content_Addon {
 			'plan'        => 'free',
 		);
 		$features['related_content_yoast_seo']   = array(
-			'label'       => __( 'Yoast SEO primary-term relevance', 'related-content-for-cci-posts-carousel-all-in-one' ),
-			'description' => __( 'Prioritizes content assigned to the Yoast SEO primary term, then fills the carousel from other shared public terms.', 'related-content-for-cci-posts-carousel-all-in-one' ),
+			'label'       => __( 'Yoast SEO primary-term relevance', 'related-content-for-cci-posts-carousel' ),
+			'description' => __( 'Prioritizes content assigned to the Yoast SEO primary term, then fills the carousel from other shared public terms.', 'related-content-for-cci-posts-carousel' ),
 			'enabled'     => function_exists( 'yoast_get_primary_term_id' ),
 			'source'      => 'related-content',
 			'plan'        => 'free',
 		);
 		$features['related_content_woocommerce'] = array(
-			'label'       => __( 'WooCommerce related products', 'related-content-for-cci-posts-carousel-all-in-one' ),
-			'description' => __( 'Uses the native WooCommerce related-product matcher for product-only carousels.', 'related-content-for-cci-posts-carousel-all-in-one' ),
+			'label'       => __( 'WooCommerce related products', 'related-content-for-cci-posts-carousel' ),
+			'description' => __( 'Uses the native WooCommerce related-product matcher for product-only carousels.', 'related-content-for-cci-posts-carousel' ),
 			'enabled'     => function_exists( 'wc_get_related_products' ),
 			'source'      => 'related-content',
 			'plan'        => 'free',
@@ -58,7 +58,7 @@ final class WP_Posts_Carousel_Related_Content_Addon {
 	public function add_order_option( $options ) {
 		$options[] = array(
 			'value' => self::ORDER_BY,
-			'label' => __( 'Related to the current post or product', 'related-content-for-cci-posts-carousel-all-in-one' ),
+			'label' => __( 'Related to the current post or product', 'related-content-for-cci-posts-carousel' ),
 		);
 
 		return $options;

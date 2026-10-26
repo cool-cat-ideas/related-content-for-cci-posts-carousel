@@ -1,4 +1,4 @@
-# Related Content for CCI Posts Carousel All In One 1.0.0
+# Related Content for CCI Posts Carousel 1.0.0
 
 ## What it solves
 
@@ -22,8 +22,8 @@ indexable tables or private Premium data.
 
 ## Install and use
 
-1. Install and activate CCI Posts Carousel All In One 2.0.0 or newer.
-2. Install and activate `related-content-for-cci-posts-carousel-all-in-one-1.0.0.zip`.
+1. Install and activate CCI Posts Carousel 2.0.0 or newer.
+2. Install and activate `related-content-for-cci-posts-carousel-1.0.0.zip`.
 3. Create a query-based carousel and select **Related to the current post or product** in the ordering field.
 4. Select the target post type, card template and item limit.
 5. Place the saved carousel on a singular post or product page.
@@ -55,7 +55,7 @@ Both filters receive four arguments:
 - `$enabled` (`bool`) — whether the integration should run; return a boolean.
 - `$reference` (`WP_Post`) — reference post or product.
 - `$config` (`array`) — normalized carousel configuration.
-- `$queryArgs` (`array`) — query arguments prepared by CCI Posts Carousel All In One.
+- `$queryArgs` (`array`) — query arguments prepared by CCI Posts Carousel.
 
 ## Reference item filter
 
@@ -96,4 +96,4 @@ add_filter(
 );
 ```
 
-The filter receives the final `WP_Query` arguments and must return an array. The extension produces no HTML; card markup remains owned by the selected CCI Posts Carousel All In One template.
+The filter receives the final `WP_Query` arguments and must return an array. The extension produces no HTML; card markup remains owned by the selected CCI Posts Carousel template.
