@@ -14,13 +14,18 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const slug = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8')).name;
-const pluginFile = join(root, `${slug}.php`);
+const packageInfo = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
+const slug = packageInfo.wordpressSlug ?? packageInfo.name;
+// Keep the existing entry point so source-mounted installations stay active.
+const pluginFilename = `${packageInfo.name}.php`;
+const pluginFile = join(root, pluginFilename);
 const pluginContents = readFileSync(pluginFile, 'utf8');
 const versionMatch = pluginContents.match(/^\s*\*\s*Version:\s*(.+)$/m);
 const version = versionMatch ? versionMatch[1].trim() : '';
 
 if (!version) throw new Error(`Could not read plugin version from ${pluginFile}`);
+const textDomain = pluginContents.match(/^\s*\*\s*Text Domain:\s*(.+)$/m)?.[1].trim();
+if (textDomain !== slug) throw new Error(`Text domain must match WordPress.org slug: ${slug}`);
 
 const releases = process.env.CCI_RELEASE_DIR
   ? resolve(process.env.CCI_RELEASE_DIR)
@@ -70,7 +75,7 @@ remove(stage);
 remove(zipPath);
 mkdirSync(target, { recursive: true });
 
-for (const entry of [`${slug}.php`, 'includes', 'readme.txt', 'LICENSE']) {
+for (const entry of [pluginFilename, 'includes', 'readme.txt', 'LICENSE']) {
   const source = join(root, entry);
   if (existsSync(source)) copy(source, join(target, entry));
 }

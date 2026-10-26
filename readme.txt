@@ -1,5 +1,5 @@
 === Related Content for CCI Posts Carousel All In One ===
-Contributors: coolcatideas
+Contributors: coolcatideas, teastudiopl
 Tags: carousel, related posts, related products, taxonomy
 Requires at least: 6.0
 Tested up to: 7.1
@@ -26,12 +26,14 @@ For public questions and bug reports, use [GitHub issues](https://github.com/coo
 
 == Installation ==
 
-1. Install and activate CCI Posts Carousel All In One.
+1. Install and activate [CCI Posts Carousel All In One](https://wordpress.org/plugins/wp-posts-carousel/) version 2.0.0 or newer.
 2. Install and activate this plugin.
 3. Edit a query-based carousel and select **Related to the current post or product** under **Order by**.
 4. Place the carousel on a post or product page and check the result.
 
 If no items appear, check that the current page shares a public category or tag with other published content.
+
+If replacing an earlier Related Content package, deactivate that copy before activating this one. Existing carousel settings are preserved.
 
 == Frequently Asked Questions ==
 

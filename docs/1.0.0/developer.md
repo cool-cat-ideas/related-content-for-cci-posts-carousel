@@ -23,7 +23,7 @@ indexable tables or private Premium data.
 ## Install and use
 
 1. Install and activate CCI Posts Carousel All In One 2.0.0 or newer.
-2. Install and activate `related-content-for-cci-posts-carousel-1.0.0.zip`.
+2. Install and activate `related-content-for-cci-posts-carousel-all-in-one-1.0.0.zip`.
 3. Create a query-based carousel and select **Related to the current post or product** in the ordering field.
 4. Select the target post type, card template and item limit.
 5. Place the saved carousel on a singular post or product page.

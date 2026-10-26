@@ -6,10 +6,9 @@
  * Version: 1.0.0
  * Author: Cool Cat Ideas
  * Author URI: https://coolcatideas.com/
- * Text Domain: related-content-for-cci-posts-carousel
+ * Text Domain: related-content-for-cci-posts-carousel-all-in-one
  * Requires at least: 6.0
  * Requires PHP: 7.4
- * Requires Plugins: cci-posts-carousel
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *
